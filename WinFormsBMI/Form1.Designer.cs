@@ -71,27 +71,33 @@
             // 
             // label3
             // 
-            label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(255, 255, 192);
+            label3.Font = new Font("Cordia New", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.Blue;
             label3.Location = new Point(74, 185);
             label3.Name = "label3";
-            label3.Size = new Size(50, 20);
+            label3.Size = new Size(387, 65);
             label3.TabIndex = 4;
-            label3.Text = "label3";
+            label3.Text = "---";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(74, 233);
+            label4.BackColor = Color.FromArgb(255, 224, 192);
+            label4.Font = new Font("Cordia New", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.Green;
+            label4.Location = new Point(74, 279);
             label4.Name = "label4";
-            label4.Size = new Size(50, 20);
+            label4.Size = new Size(387, 121);
             label4.TabIndex = 5;
-            label4.Text = "label4";
+            label4.Text = "---";
+            label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
-            button1.Location = new Point(386, 80);
+            button1.Location = new Point(353, 59);
             button1.Name = "button1";
-            button1.Size = new Size(108, 29);
+            button1.Size = new Size(108, 57);
             button1.TabIndex = 6;
             button1.Text = "คำนวณ BMI";
             button1.UseVisualStyleBackColor = true;
@@ -110,7 +116,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "คำนวณค่า BMI";
             ResumeLayout(false);
             PerformLayout();
         }
