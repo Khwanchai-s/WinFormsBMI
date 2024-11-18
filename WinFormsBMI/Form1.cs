@@ -9,8 +9,20 @@ namespace WinFormsBMI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double weight = Convert.ToDouble(textBox1.Text);
-            double height = Convert.ToDouble(textBox2.Text);
+            //double weight = Convert.ToDouble(textBox1.Text);
+            //double height = Convert.ToDouble(textBox2.Text);
+            double weight = 0; 
+            double height = 0;
+            if (double.TryParse(textBox1.Text, out weight)==false)
+            {
+                textBox1.Text = "0";
+                return;             // จบโปรแกรม
+            }
+            if (!double.TryParse(textBox2.Text, out height))
+            {
+                textBox2.Text = "0";
+                return;             // จบโปรแกรม
+            }
             //Process คำนวณ BMI
             double bmi = weight / Math.Pow(height / 100, 2);
             string result = "";
